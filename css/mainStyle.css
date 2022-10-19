@@ -52,7 +52,7 @@ header{
     display: flex;
 }
 .menu{
-    width:60%;
+    width:100%;
 }
 .menu li{
     display:inline-block;

@@ -1,92 +1,52 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<html lang="en" ng-app="weatherApp">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/slide.css">
-    <link rel="stylesheet" href="./css/update.css">
-    <link rel="stylesheet" href="./asset/fontawesome/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>NEDESIGN</title>
-    <base href="/">
+    <title>AngularJS - Dự báo thời tiết</title>
+    <meta charset="utf-8">
+
+    <!-- load bootstrap via CDN -->
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- load angularjs via CDN -->
+    <script type="text/javascript" src="https://code.angularjs.org/1.4.9/angular.min.js"></script>
+    <script type="text/javascript" src="https://code.angularjs.org/1.4.9/angular-route.min.js"></script>
+    <script type="text/javascript" src="https://code.angularjs.org/1.4.9/angular-resource.min.js"></script>
+
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="routes.js"></script>
+    <script type="text/javascript" src="services.js"></script>
+    <script type="text/javascript" src="controllers.js"></script>
+    <script type="text/javascript" src="directives.js"></script>
+
+    <style>
+        * {
+            font-size: 1.05em;
+        }
+    </style>
+
 </head>
+
 <body>
     <header>
-        <div class="menu-button">
-            <div class="line line01"></div>
-            <div class="line line02"></div>
-            <div class="line line03"></div>
-        </div>
-        <div class="menu">
-            <div class="logo">
-                <div class="image">
-                    <img src="./images/favicon.svg" alt="">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Dự báo thời tiết</a>
                 </div>
-                <div class="textLogo">
-                    NEDESIGN
-                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#/">Home</a></li>
+                </ul>
             </div>
-            <ul class="nav">
-                <li><a href="/">trang chủ</a></li>
-                <li><a href="/about">giới thiệu</a></li>
-                <li id="danhmuc"><a  href="/product">danh mục khóa học</a>
-                    <i class="fa-solid fa-angle-down"></i>
-                    <div class="menu-sub">
-
-                        <div class="content">
-                            <h3>Web Devolopment</h3>
-                            <ul class="sub">
-                                <li><a href="/update">Front-end</a></li>
-                                <li><a href="/update">Back-end</a></li>
-                                <li><a href="/update">Fullstack</a></li>
-                            </ul>
-                        </div>
-                        <div class="content">
-                            <h3>APP Devolopment</h3>
-                            <ul class="sub">
-                                <li><a href="/update">ANDROID</a></li>
-                                <li><a href="/update">IOS</a></li>
-                            </ul>
-                        </div>
-                        <div class="content">
-                            <h3>PROGRAMING LANGUAGE</h3>
-                            <ul class="sub">
-                                <li><a href="/update">Python</a></li>
-                                <li><a href="/update">java</a></li>
-                                <li><a href="/update">C#</a></li>
-                            </ul>
-                        </div>
-                        <div class="content">
-                            <h3>ORTHER</h3>
-                            <ul class="sub">
-                                <li><a href="/update">MARKETING</a></li>
-                                <li><a href="/update">hacking</a></li>
-                                <li><a href="/update">design</a></li>
-                                <li><a href="/update">KINH DOANH</a></li>
-                                <li><a href="/update">KỸ NĂNG</a></li>
-                            </ul>
-                        </div>
-                    
-                    </div>
-                    
-                </li>
-                <li><a href="/courseNew">Khóa học mới</a></li>
-                <li><a href="/user">đăng ký thành viên</a></li>
-            </ul>
-        </div>
+        </nav>
     </header>
-    
-    <div ng-view></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
-    <script src="./js/angular.js"></script>
-    <script src="./js/header.js"></script>
-    <script src="./js/animation.js"></script>
-    
+
+    <div class="container">
+
+        <div ng-view></div>
+
+    </div>
+
 </body>
+
 </html>

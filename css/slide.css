@@ -1,0 +1,173 @@
+.slide{
+    width:100vw;
+    height:50vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+    background-image:url("https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+}
+.slide .content{
+    width:50vw;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+.slide h1{
+    color: white;
+    font-size: 30px;
+}
+.slide .c-1{
+    height:3px;
+    width:50px;
+    background:white;
+    position: absolute;
+    left:0;
+    animation: chuyendong 3s ease-in-out infinite;
+}
+@keyframes chuyendong {
+    0%{
+        left:0%;
+    }
+    50%{
+        left:100%;
+    }
+
+}
+.slide p{
+    color: white;
+    padding: 10px 0px;
+}
+.fa-square-facebook{
+    font-size: 40px;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+}
+.fa-square-facebook:hover{
+    transform: scale(1.3);
+}
+.logoBG{
+    width:50%;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    z-index: 1;
+    animation:xoay 3s ease-in-out infinite;
+}
+.logoBG img{
+    width:100%;
+}
+@keyframes xoay {
+    0%{
+        transform:translateY(-50%) rotate(0deg);
+    }
+    100%{
+        transform:translateY(-50%) rotate(360deg);
+    }
+
+}
+/* // phan course */
+.courses {
+    width:100vw;
+    margin-top: 20px;
+    overflow-x: hidden;
+}
+.courses .k1{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden
+}
+.k1 h1{
+    width:100%;
+    font-size: 30px;
+    padding: 10px;
+    background:black;
+    color: white;
+}
+.course{
+    width:calc(75vw/3);
+    margin-top: 20px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.course:hover{
+    box-shadow: 0px 10px 10px rgb(192, 192, 192);
+}
+.one-c{
+    width:100%;
+    position:relative;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.hastag{
+    position: absolute;
+    top:10px;
+    right:0px;
+    padding:5px 20px;
+    background:rgb(1, 146, 18);
+    color:white;
+    font-style: italic;
+}
+.img{
+    width:100%;
+    height:160px;
+    top:0px;
+    left:0px;
+    overflow:hidden;
+}
+.img img{
+    width:100%;
+}
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    padding:5px;
+
+}
+.link{
+    display: flex;
+    justify-content:space-between;
+    padding: 5px 15px;
+}
+.link a{
+    text-decoration: none;
+    font-size:15px;
+    padding:5px 20px;
+    color:white;
+    transition:0.3s;
+}
+.link a:hover{
+    background-color:gray;
+}
+.hoc{
+    margin-top: 20px;
+    width:100%;
+    padding:15px;
+    display:block;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color:white;
+    background:black;
+    transition: 0.5s;
+}
+
+.hoc:hover{
+    transform: scale(1.1);
+}
+.kichhoat{
+    background-color: rgb(194, 0, 0);
+}
+.goc{
+    background-color: black;
+}

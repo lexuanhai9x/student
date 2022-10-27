@@ -17,4 +17,9 @@ nutMenu.addEventListener("click",function(){
 })
 nutMenu.addEventListener('mouseover',function(){
     menuNav.classList.remove('active2');
-})
+});
+var danhmuc = document.getElementById('danhmuc');
+console.log(danhmuc);
+danhmuc.addEventListener('click',function () {  
+    this.classList.toggle('active');
+});

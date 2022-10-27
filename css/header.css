@@ -201,6 +201,47 @@ li.active .menu-sub {
     }
 }
 @media screen and (max-width:880px) {
-
-    
+    .menu .logo{
+        width: 40vw;
+    }
+    .menu .logo .textLogo{
+        font-size: 30px;
+    }
+    ul.nav{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border: 1px solid gray;
+    }
+    ul.nav>li>a{
+        color: black;
+    }
+    ul.nav>li{
+        position: relative;
+    }
+    .menu-sub{
+        display: flex;
+        flex-direction: column;
+        z-index: 10;
+        opacity: 0;
+        height: 50vh;
+        justify-content: flex-start;
+        
+    }
+    .menu-sub .content{
+        width: 100%;
+        text-align: left;
+        margin-top: 10px;
+    }
+    .menu-sub .content .sub{
+        text-align: center;
+    }
+    .menu-sub .content h3{
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+    #danhmuc.active .menu-sub{
+        opacity: 1;
+    }
 }

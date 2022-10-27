@@ -1,0 +1,79 @@
+.footer{
+    width: 100vw;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.877);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.footer .logo{
+    width: 50vw;
+    background-color: white;
+    
+}
+@keyframes anhien {
+    0%{opacity: 0;}
+    50%{opacity: 50;}
+    100%{opacity: 0;}
+}
+.footer>.logo>img{
+    width: 50vw;
+    animation: anhien 4s ease-in-out infinite;
+   
+}
+.footer .textFt{
+    width: 50vw;
+    color: white;
+    padding: 50px 20px;
+}
+.textFt span{
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+.textFt p{
+    font-size: 20px;
+    color: gray;
+    letter-spacing: 10px;
+    padding: 10px 0px;
+}
+.nganhang{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.nganhang img{
+    width: 50%;
+}
+.nganhang .textnganhang{
+    font-size: 30px;
+}
+.nganhang .textnganhang b{
+    color: yellow;
+}
+.noidungf{
+    color: gray;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top : 50px;
+    letter-spacing: 5px;
+
+}
+.noidungf .iconkh{
+    display: flex;
+    width: 30%;
+    margin-top: 20px;
+}
+.noidungf .iconkh a{
+    width: 50%;
+    transition: 0.5s;
+}
+.noidungf .iconkh a:hover{
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.footer a img{
+ width: 100%;
+ padding: 10px 20px
+}

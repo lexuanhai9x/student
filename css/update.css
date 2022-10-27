@@ -1,0 +1,27 @@
+.update{
+    width:100vw;
+    height:100vh;
+    background-image: url('../images/update.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+   align-items:center;
+   text-align: center;
+}
+.textu{
+    font-size:3vw;
+    font-weight: bold;
+    background:white;
+}
+.update a{
+    padding:10px 50px;
+    font-weight: bold;
+    color:white;
+    background:red;
+    font-size:30px;
+    text-decoration: none;
+
+}

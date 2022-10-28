@@ -77,3 +77,32 @@
  width: 100%;
  padding: 10px 20px
 }
+@media screen and (max-width:956px) {
+    .noidungf .iconkh{
+        width:50%;
+    }
+    .footer .logo{
+        background:none;
+    }
+}
+@media screen and (max-width:600px) {
+    .footer{
+        flex-direction: column;
+    }
+    .footer .logo{
+       display:none;
+    }
+    .footer .textFt{
+        width:100vw;
+        text-align:center
+    }
+    .nganhang{
+        justify-content:center;
+    }
+    .nganhang img{
+        width:100%;
+    }
+    .noidungf .iconkh{
+        margin: auto;
+    }
+}

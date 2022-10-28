@@ -6,6 +6,9 @@
     align-items:center;
     position:relative;
     overflow:hidden;
+    margin-top: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
     
 }
 .slide .content{
@@ -171,3 +174,46 @@
 .goc{
     background-color: black;
 }
+@media screen and (min-width:1920px){
+    .course{
+        width:calc(75vw/5);
+        
+    }
+}
+@media screen and (max-width:1920px){
+    .course{
+        width:calc(75vw/4);
+        
+    }
+}
+@media screen and (max-width:1480px){
+    .course{
+        width:calc(75vw/3);
+        
+    }
+}
+@media screen and (max-width:1110px){
+    .course{
+        width:calc(75vw/2);
+        
+    }
+}
+@media screen and (max-width:739px){
+
+    .course{
+        width:100%;
+    }
+    .course .img{
+        height:300px;
+    }
+}
+@media screen and (max-width:624px){
+
+    .course{
+        width:100%;
+    }
+    .course .img{
+        height:30%;
+    }
+}
+

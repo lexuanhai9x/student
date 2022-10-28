@@ -245,7 +245,7 @@ li.active .menu-sub {
         opacity: 1;
     }
 }
-@media screen and (max-width:550px){
+@media screen and (max-width:720px){
     .menu .logo .textLogo{
         display: none;
     }

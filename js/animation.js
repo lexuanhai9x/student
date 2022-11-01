@@ -7,8 +7,3 @@ document.addEventListener("DOMContentLoaded",function(){
         this.classList.remove('active');
     })
 });
-
-var textName = document.querySelector('.ten');
-var text;
-var ten = function(){}
-textName.innerHTML = document.getElementById('firstname').value;
